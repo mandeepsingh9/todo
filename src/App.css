@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.App{
+  
+ display: flex;
+ flex-direction: column;
+ 
+ align-items: center;
+ }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.add{
   display: flex;
-  flex-direction: column;
+  gap: 5px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+ background-color: transparent;
+ color: white;
+}
+.add input{
+  height: 30px;
+  width: 300px;
+ border: none;
+ outline: none;
+ font-size: large;
+  border-bottom: 2px solid rgb(238, 5, 219);
+  padding: 5px;
+  color: antiquewhite;
+  background-color: transparent;
+}
+
+.header{
   color: white;
+  font-size: 70px;
+  font-weight: bolder;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.todo{
+     display: flex;
+     color: aliceblue;
+     
+     font-size: larger;
+     font-weight: bolder;
+     justify-content: space-between;
+     padding: 10px 30px 10px 30px;
+     border-bottom: 2px solid rgb(238, 5, 219);
+     width: 60%;
+     align-self: center;
+     border-radius: 40px ;
+       
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todos{
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  flex-direction: column;
+  
+  gap: 10px;  
 }
+
+.todo div
+{
+  display: flex;
+  gap: 30px;
+  
+}
+
+
